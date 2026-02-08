@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aansh FreshFarm2Home - Red Flame Seedless Grapes | Nashik Export Quality</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Section Styles */
+        section {
+            background: white;
+            margin: 30px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        /* Product Offerings */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+        }
+
+        .product-card h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 200px;
+            background: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+        }
+
+        /* Auto-scrolling image slider */
+        .image-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .slider-track {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            width: fit-content;
+        }
+
+        .slider-track:hover {
+            animation-play-state: paused;
+        }
+
+        .slider-image {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            margin-right: 15px;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slider-image {
+                width: 300px;
+                height: 225px;
+            }
+        }
+
+        /* Customer Feedback */
+        .feedback {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feedback-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feedback-card .stars {
+            color: #ffc107;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .feedback-card .customer-name {
+            font-weight: bold;
+            color: #764ba2;
+            margin-top: 10px;
+        }
+
+        /* Order Form */
+        .order-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.3s;
+            font-weight: 600;
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.02);
+        }
+
+        #map {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .whatsapp-icon {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>🍇 Aansh FreshFarm2Home</h1>
+            <p>Premium Red Flame Seedless Grapes - Nashik Export Quality</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Residue-Free | Farm-Fresh | Direct from Nashik Vineyards</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Product Details -->
+        <section>
+            <h2>Premium Red Flame Seedless Grapes</h2>
+            <div style="text-align: center; margin-bottom: 30px;">
+                <div style="font-size: 4em; margin: 20px 0;">🍇</div>
+                <h3 style="color: #764ba2; font-size: 1.8em; margin-bottom: 15px;">Nashik Export Quality</h3>
+                
+                <!-- Pricing -->
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 10px; max-width: 500px; margin: 20px auto; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                    <p style="font-size: 1.1em; margin-bottom: 10px;">📦 Box Size: Approx. 2 kg</p>
+                    <p style="font-size: 1.3em; text-decoration: line-through; opacity: 0.8; margin-bottom: 5px;">₹800</p>
+                    <p style="font-size: 2.5em; font-weight: bold; margin: 10px 0;">₹599/-</p>
+                    <p style="font-size: 1.2em; background: rgba(255,255,255,0.2); padding: 10px; border-radius: 5px; margin-top: 15px;">🎉 Special Discounted Price!</p>
+                    <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.9;">+ Home Delivery Charges As Applicable</p>
+                </div>
+            </div>
+            
+            <div class="products">
+                <div class="product-card">
+                    <h3>🌿 Residue-Free</h3>
+                    <p>100% chemical-free cultivation. Safe for your family, especially children</p>
+                </div>
+                <div class="product-card">
+                    <h3>🍇 Seedless</h3>
+                    <p>Perfectly seedless red flame variety. Sweet, crispy, and juicy</p>
+                </div>
+                <div class="product-card">
+                    <h3>📦 Export Quality</h3>
+                    <p>Premium grade grapes meeting international export standards</p>
+                </div>
+                <div class="product-card">
+                    <h3>🚜 Farm Fresh</h3>
+                    <p>Directly from Nashik vineyards to your doorstep within 24-48 hours</p>
+                </div>
+            </div>
+
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; margin-top: 30px; border-left: 4px solid #667eea;">
+                <h3 style="color: #764ba2; margin-bottom: 15px;">Why Choose Our Red Flame Grapes?</h3>
+                <ul style="line-height: 2; padding-left: 20px;">
+                    <li>✅ <strong>Nashik Origin:</strong> Grown in India's premium grape cultivation region</li>
+                    <li>✅ <strong>Export Grade:</strong> Same quality supplied to international markets</li>
+                    <li>✅ <strong>Zero Residue:</strong> Lab-tested and certified pesticide-free</li>
+                    <li>✅ <strong>Natural Sweetness:</strong> No artificial ripening or chemicals used</li>
+                    <li>✅ <strong>Fresh Harvest:</strong> Handpicked and delivered within 24-48 hours</li>
+                    <li>✅ <strong>Perfect for Kids:</strong> Safe, healthy, and delicious</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Photo Gallery with Auto-Scroll -->
+        <section>
+            <h2>Our Premium Red Flame Grapes Gallery 📸</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 20px;">Fresh from our Nashik vineyards • Hover to pause</p>
+            
+            <div class="image-slider">
+                <div class="slider-track">
+                    <!-- First set of images -->
+                    <img src="637.jpg" alt="Red Flame Grapes on Vine" class="slider-image">
+                    <img src="641.jpg" alt="Fresh Harvested Grapes" class="slider-image">
+                    <img src="636.jpg" alt="Grapes in Box" class="slider-image">
+                    <img src="638.jpg" alt="Red Flame Grape Cluster" class="slider-image">
+                    <img src="639.jpg" alt="Premium Grape Bunch" class="slider-image">
+                    <img src="640.jpg" alt="Close-up Red Grapes" class="slider-image">
+                    <img src="147.jpg" alt="Customer Feedback Screenshot" class="slider-image">
+                    <img src="148.jpg" alt="Happy Customer Reviews" class="slider-image">
+                    
+                    <!-- Duplicate set for seamless loop -->
+                    <img src="637.jpg" alt="Red Flame Grapes on Vine" class="slider-image">
+                    <img src="641.jpg" alt="Fresh Harvested Grapes" class="slider-image">
+                    <img src="636.jpg" alt="Grapes in Box" class="slider-image">
+                    <img src="638.jpg" alt="Red Flame Grape Cluster" class="slider-image">
+                    <img src="639.jpg" alt="Premium Grape Bunch" class="slider-image">
+                    <img src="640.jpg" alt="Close-up Red Grapes" class="slider-image">
+                    <img src="147.jpg" alt="Customer Feedback Screenshot" class="slider-image">
+                    <img src="148.jpg" alt="Happy Customer Reviews" class="slider-image">
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <p style="color: #764ba2; font-size: 1.1em;">
+                    <strong>✨ Authentic Photos • Real Grapes • Real Quality ✨</strong>
+                </p>
+            </div>
+        </section>
+
+        <!-- Customer Feedback -->
+        <section>
+            <h2>Three Years Customer Delight ❤️</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 25px; font-size: 1.1em;">Our loyal customers who trust us year after year</p>
+            <div class="feedback">
+                <div class="feedback-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Excellent quality Red Flame grapes! Always fresh and sweet. Been ordering for 3 years now and never disappointed. The residue-free guarantee gives me peace of mind for my family."</p>
+                    <div class="customer-name">- Yogesh Kulkarni, Chinchwad</div>
+                </div>
+                <div class="feedback-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Best grapes in Pune! Export quality at reasonable price. Aansh FreshFarm2Home has been our go-to for years. Highly recommended for quality and service."</p>
+                    <div class="customer-name">- Bharat Patil, Punawale</div>
+                </div>
+                <div class="feedback-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Outstanding freshness and taste! These Nashik grapes are premium quality. Been a satisfied customer for 3 years. Perfect for kids and family gatherings."</p>
+                    <div class="customer-name">- Sandip Dadkar, Kothrud</div>
+                </div>
+                <div class="feedback-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Consistently excellent quality over the years! Sweet, seedless, and chemical-free. My children love these grapes. Reliable delivery and great customer service."</p>
+                    <div class="customer-name">- Ramya Keshava, Pimpri</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form -->
+        <section>
+            <h2>Place Your Order</h2>
+            <div class="order-form">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Product</label>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border: 2px solid #667eea;">
+                            <strong style="color: #764ba2;">🍇 Red Flame Seedless Grapes - Nashik Export Quality</strong>
+                            <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #666;">Residue-Free | Premium Grade</p>
+                            <p style="margin: 5px 0 0 0; font-size: 1em; color: #333;"><strong>₹599/box</strong> <span style="text-decoration: line-through; color: #999;">₹800</span></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="boxes">Number of Boxes * (1 Box = Approx. 2 kg)</label>
+                        <input type="number" id="boxes" name="boxes" min="1" required placeholder="How many boxes?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deliveryDate">Preferred Delivery Date *</label>
+                        <input type="date" id="deliveryDate" name="deliveryDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Delivery Address *</label>
+                        <textarea id="address" name="address" required placeholder="Enter your complete delivery address"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Pin Your Location (Optional)</label>
+                        <input type="text" id="location" name="location" placeholder="Enter address to search on map">
+                        <div id="map"></div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="whatsapp-icon">💬</span> Send Order via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Aansh FreshFarm2Home | Premium Red Flame Seedless Grapes from Nashik</p>
+        <p>Residue-Free | Export Quality | Farm Fresh</p>
+        <p style="margin-top: 10px;">📱 WhatsApp: +91-9923032665 | 📧 Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b3daddd5dcf3d2d2ddc0dbd5c1d6c0dbd5d2c1de81dbdcded69dd0dcde">[email&#160;protected]</a></p>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Set minimum date to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('deliveryDate').setAttribute('min', today);
+
+        // Initialize map
+        let map;
+        let marker;
+
+        function initMap() {
+            // Default location (you can change this to your area)
+            const defaultLocation = { lat: 28.6139, lng: 77.2090 }; // Delhi coordinates
+            
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: defaultLocation,
+                zoom: 12
+            });
+
+            marker = new google.maps.Marker({
+                position: defaultLocation,
+                map: map,
+                draggable: true
+            });
+
+            // Add search box
+            const input = document.getElementById('location');
+            const searchBox = new google.maps.places.SearchBox(input);
+
+            map.addListener('bounds_changed', function() {
+                searchBox.setBounds(map.getBounds());
+            });
+
+            searchBox.addListener('places_changed', function() {
+                const places = searchBox.getPlaces();
+                if (places.length == 0) return;
+
+                const place = places[0];
+                if (!place.geometry || !place.geometry.location) return;
+
+                map.setCenter(place.geometry.location);
+                marker.setPosition(place.geometry.location);
+                map.setZoom(15);
+            });
+        }
+
+        // Form submission
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const boxes = document.getElementById('boxes').value;
+            const deliveryDate = document.getElementById('deliveryDate').value;
+            const address = document.getElementById('address').value;
+
+            let locationInfo = '';
+            if (marker) {
+                const lat = marker.getPosition().lat();
+                const lng = marker.getPosition().lng();
+                locationInfo = `\n📍 Location: https://www.google.com/maps?q=${lat},${lng}`;
+            }
+
+            const totalAmount = boxes * 599;
+
+            const message = `🍇 *New Order - Aansh FreshFarm2Home*\n\n` +
+                          `*Product:* Red Flame Seedless Grapes (Nashik Export Quality)\n` +
+                          `*Residue-Free | Premium Grade*\n\n` +
+                          `👤 Name: ${name}\n` +
+                          `📱 Phone: ${phone}\n` +
+                          `📦 Boxes: ${boxes} (@ 2kg per box)\n` +
+                          `💰 Price: ₹${totalAmount}/- (₹599 per box)\n` +
+                          `📅 Delivery Date: ${deliveryDate}\n` +
+                          `🏠 Address: ${address}${locationInfo}\n\n` +
+                          `_*Note:* Home delivery charges as applicable_`;
+
+            // Replace with your WhatsApp number (include country code without +)
+            const whatsappNumber = '919923032665'; // Aansh FreshFarm2Home WhatsApp
+    
